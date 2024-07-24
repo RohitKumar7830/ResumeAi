@@ -1,8 +1,26 @@
 import React from 'react'
+import { useState,useEffect } from 'react'
 
 function Navbar() {
+    const [sticky, setSticky] = useState(false)
+    useEffect(() => {
+      const handleScroll = () =>{
+        if(window.scrollY > 0){
+            setSticky(true);
+        }
+        else{
+            setSticky(false);
+        }
+      }
+      window.addEventListener("scroll",(handleScroll))
+      return () => {
+        window.removeEventListener("scroll",(handleScroll))
+      }
+    }, [])
     return (
-        <div className=" mt-1 navbar w-screen sticky z-0">
+        <div className={`  navbar w-screen fixed top-0 right-0 left-0 z-10 ${
+            sticky?"sticky-navbar shadow-md bg-base-200 duration-400 transition-all ease-in-out":""
+        }`}>
             <div className="navbar-start">
                 <a className="btn md:mx-32 mx-6 btn-ghost text-2xl  md:text-3xl">SmartML Labs</a>
             </div>
