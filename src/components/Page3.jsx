@@ -10,7 +10,8 @@ function NextArrow(props) {
   const { onClick } = props;
   return (
     <div
-      style={{ position: 'absolute', top: '20%', right: '4px', zIndex: 2, cursor: 'pointer',  borderRadius: '50%', padding: '10px' }}
+      className='md:top-[40%] md:right-[65%] top-[20%] right-[3%]'
+      style={{ position: 'absolute', zIndex: 2, cursor: 'pointer',  borderRadius: '50%', padding: '10px' }}
       onClick={onClick}
     >
       ▶
@@ -23,7 +24,8 @@ function PrevArrow(props) {
   const { onClick } = props;
   return (
     <div
-      style={{ position: 'absolute', top: '20%', left: '4px', zIndex: 2, cursor: 'pointer',  borderRadius: '50%', padding: '10px' }}
+      className='md:top-[40%] md:left-[4%] top-[20%] left-[3%] '
+      style={{ position: 'absolute', zIndex: 2, cursor: 'pointer',  borderRadius: '50%', padding: '10px' }}
       onClick={onClick}
     >
       ◀
