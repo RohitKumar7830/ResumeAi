@@ -66,7 +66,7 @@ function Page2() {
                 </h1>
                 <button className= ' hidden md:block bg-blue-600 text-white px-4 py-0 h-14 md:px-8 md:py-1 border-white border-2'>Services</button>
             </div>
-            <div className=" md:p-20   gap-4">
+            <div className=" md:p-20  ml-2  gap-4">
                 <Slider {...settings}>
                     {items.map(item => (
                         <Card key={item.id} item={item} />

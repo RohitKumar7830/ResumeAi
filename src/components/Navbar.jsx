@@ -18,7 +18,7 @@ function Navbar() {
       }
     }, [])
     return (
-        <div className={`  navbar w-screen fixed top-0 right-0 left-0 z-10 ${
+        <div className={`navbar w-screen fixed top-0 right-0 left-0 z-10 ${
             sticky?"sticky-navbar shadow-md bg-base-200 duration-400 transition-all ease-in-out":""
         }`}>
             <div className="navbar-start">

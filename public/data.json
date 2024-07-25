@@ -1,0 +1,26 @@
+{
+    "items":[
+        {
+            "id": 1,
+            "img": "https://www.hloom.com/images/exp-one-carousel-img-one.png",
+            "description": "Fast And Easy"
+
+             
+        },
+        {
+            "id": 2,
+            "img": "https://www.hloom.com/images/exp-one-carousel-img-two.png",
+            "description": "High-Quality Templates"
+        },
+        {
+            "id": 3,
+            "img": "https://www.hloom.com/images/exp-one-carousel-img-three.png",
+            "description": "Experts Writes for you"
+        },
+        {
+            "id": 4,
+            "img": "https://www.hloom.com/images/exp-one-carousel-img-four.png",
+            "description": "We are here to help"
+        }
+    ]
+}
